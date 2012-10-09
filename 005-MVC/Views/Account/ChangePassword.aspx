@@ -21,7 +21,7 @@
                 
                 <div class="editor-label">
                     <%: Html.LabelFor(m => m.OldPassword) %>
-                </div>
+                </div> 
                 <div class="editor-field">
                     <%: Html.PasswordFor(m => m.OldPassword) %>
                     <%: Html.ValidationMessageFor(m => m.OldPassword) %>
