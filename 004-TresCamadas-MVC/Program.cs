@@ -28,8 +28,12 @@ namespace Model
     }
 }
 
+
 namespace Controller
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Pessoa
     {
         public Model.Pessoa Get(String u, String p)
