@@ -6,15 +6,14 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{93FB745D-F0F6-4048-BF89-76378D3973B2}</ProjectGuid>
+    <ProjectGuid>{2651A5FA-F495-4DB1-B8F5-AA52D4359B3D}</ProjectGuid>
     <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_007_MVCLifeCycle</RootNamespace>
-    <AssemblyName>007-MVCLifeCycle</AssemblyName>
+    <RootNamespace>_010_Pessoa</RootNamespace>
+    <AssemblyName>010-Pessoa</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,19 +65,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador.cs" />
-    <Compile Include="Controllers\PaginasController.cs" />
+    <Compile Include="Controllers\PessoaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Pessoa.cs" />
+    <Compile Include="PessoaDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Views\Paginas\Foo.aspx" />
-    <Content Include="Views\Paginas\Index.aspx" />
-    <Content Include="Views\Paginas\Mensagem.aspx" />
+    <Content Include="Views\Pessoa\Adicionar.aspx" />
+    <Content Include="Views\Pessoa\Detalhes.aspx" />
+    <Content Include="Views\Pessoa\Editar.aspx" />
+    <Content Include="Views\Pessoa\Excluir.aspx" />
+    <Content Include="Views\Pessoa\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -101,7 +103,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -119,7 +120,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>11911</DevelopmentServerPort>
+          <DevelopmentServerPort>6995</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

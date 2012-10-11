@@ -11,5 +11,27 @@ namespace _007_MVCLifeCycle.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// Get: /Paginas/Foo
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Foo()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// Get: /Paginas/Mensagem
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public ActionResult Mensagem(string msg)
+        {
+            return View();
+        }
+
+
+
     }
 }
